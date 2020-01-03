@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Layout, Spin } from 'antd';
+import { Layout } from 'antd';
 
 import './style.css';
 
-import HOC from '../../Components/HOC';
+import { HOC, Loading } from '../../Components';
 import Sidebar from '../Sider';
-import Loading from '../../Components/Loading';
 
 import { connect } from 'react-redux';
 
