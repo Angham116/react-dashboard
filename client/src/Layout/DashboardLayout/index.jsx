@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-// import { Link } from 'react-dom';
 
-// import Layout from './Layout/DashboardLayout';
 import { Layout, Menu, Spin } from 'antd';
 
-import 'antd/dist/antd.css';
+import './style.css';
 
 import HOC from '../../Components/HOC';
 
@@ -18,8 +16,6 @@ import {
 import { connect } from 'react-redux';
 
 import changeContentAction from '../../store/actions/changeContent';
-
-
 
 const { Sider, Header, Content, Footer } = Layout;
 
@@ -59,7 +55,6 @@ class App extends Component {
               <Content
                 className="dashboard__content-container"
                 style={{
-                  background: '#fff',
                   padding: 24,
                   margin: 0,
                   minHeight: 280,
