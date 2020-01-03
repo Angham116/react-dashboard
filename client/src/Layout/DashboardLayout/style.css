@@ -1,0 +1,20 @@
+.dashboard__sider-container.ant-layout-sider {
+  background: #FF857A;
+  min-height: 1080px;
+}
+
+.dashboard__header-container.ant-layout-header {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 6px #0000000A;
+  opacity: 1;
+}
+
+.dashboard__content {
+  margin: 2rem;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  height: 936px;
+}
+
+.ant-layout-footer.dashboard__footer-container {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
