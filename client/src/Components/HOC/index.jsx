@@ -32,7 +32,7 @@ const LayoutContent = ({
         return <People />
       case 'Groups':
       return <Groups />
-      case 'Help_Center':
+      case 'HelpCenter':
         return <HelpCenter />
       default:
         return <Dashboard />
