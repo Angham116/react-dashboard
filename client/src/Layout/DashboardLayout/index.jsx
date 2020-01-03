@@ -1,30 +1,19 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import { Layout, Menu, Spin } from 'antd';
+import { Layout, Spin } from 'antd';
 
 import './style.css';
 
 import HOC from '../../Components/HOC';
-
-import {
-  Dashboard_Url,
-  Notifications_Url,
-  Settings_Url
-} from '../../routes_url';
+import Sidebar from '../Sider';
+import Loading from '../../Components/Loading';
 
 import { connect } from 'react-redux';
 
-import changeContentAction from '../../store/actions/changeContent';
-
 const { Sider, Header, Content, Footer } = Layout;
 
-class App extends Component {
-
-  handleChangeContent = content => {
-    const { changeContentAction : changeContent } = this.props;
-    changeContent(content);
-  }
+class DashboardLayout extends Component {
 
   render(){
     const { content, loading } = this.props;
@@ -32,22 +21,7 @@ class App extends Component {
       <Router>
         <Layout>
           <Sider className="dashboard__sider-container">
-              <Menu>
-                <Menu.Item
-                  onClick={() => this.handleChangeContent('Dashboard')}>
-                    <Link to={Dashboard_Url}>Dashboard</Link>
-                </Menu.Item>
-                <Menu.Item
-                  onClick={() => this.handleChangeContent('Notifications')}
-                >
-                  <Link to={Notifications_Url}>Notifications</Link>
-                </Menu.Item>
-                <Menu.Item
-                  onClick={() => this.handleChangeContent('Settings')}
-                >
-                  <Link to={Settings_Url}>Settings</Link>
-                </Menu.Item>
-              </Menu>
+            <Sidebar />
           </Sider>
           <Layout>
             <Header className="dashboard__header-container">header</Header>
@@ -62,7 +36,7 @@ class App extends Component {
               >
                 <div className="dashboard__content">
                 {loading ? 
-                  <Spin /> 
+                  <Loading /> 
                 :
                 <Router>
                   {/* <Switch> */}
@@ -89,4 +63,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, { changeContentAction })(App);
+export default connect(mapStateToProps)(DashboardLayout);
