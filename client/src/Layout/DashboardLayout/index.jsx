@@ -9,7 +9,7 @@ import { HOC, Loading } from '../../Components';
 import Sidebar from '../Sider';
 import PageHeader from '../../Components/CommonComponents/ContentHeader';
 
-
+import logo from '../../Assets/logo.png';
 
 // import P
 
@@ -25,6 +25,9 @@ class DashboardLayout extends Component {
       <Router>
         <Layout>
           <Sider className="dashboard__sider-container">
+            <div className="logo">
+              <img src={logo} alt="logo" />
+            </div>
             <Sidebar />
           </Sider>
           <Layout>

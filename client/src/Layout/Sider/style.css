@@ -1,0 +1,21 @@
+.sidebar__container.ant-menu {
+  background: #FF857A;
+}
+
+.sidebar__container.ant-menu a {
+  color: #fff;
+}
+
+.ant-menu:not(.ant-menu-horizontal)
+.ant-menu-item-selected {
+  background: rgba(255, 239, 237, 0.4) !important;
+  border-left: 6px solid #FFCA83;
+}
+
+.sidebar__container .ant-menu-item.ant-menu-item-active:hover {
+  font-size: 1rem !important;
+}
+
+.sidebar__container .ant-menu-item.ant-menu-item-active:hover a {
+  color: #fff !important;
+}
