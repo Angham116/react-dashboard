@@ -18,3 +18,9 @@
 .ant-layout-footer.dashboard__footer-container {
   background: #FFFFFF 0% 0% no-repeat padding-box;
 }
+
+.logo {
+  background: #fff;
+  padding-bottom: 1.3rem;
+}
+

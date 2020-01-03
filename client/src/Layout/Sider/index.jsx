@@ -19,6 +19,7 @@ import { connect } from 'react-redux';
 
 import changeContentAction from '../../store/actions/changeContent';
 
+import './style.css';
 class Sider extends Component {
 
   handleChangeContent = content => {
@@ -29,7 +30,7 @@ class Sider extends Component {
   render() {
     return (
       <>
-        <Menu>
+        <Menu className="sidebar__container">
           <Menu.Item
             onClick={() => this.handleChangeContent('Dashboard')}>
               <Link to={Dashboard_Url}>Dashboard</Link>
