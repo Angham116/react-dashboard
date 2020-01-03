@@ -1,0 +1,14 @@
+.meetings__header-container {
+  display: flex;
+}
+
+.meetings__header-left,
+.meetings__header-right {
+  width: 50%;
+  padding: 1.5rem 2rem;
+}
+
+.meetings__header-right button {
+  float: right;
+}
+

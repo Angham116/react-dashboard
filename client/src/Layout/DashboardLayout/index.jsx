@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { Layout } from 'antd';
+import { Layout, Breadcrumb } from 'antd';
 
 import './style.css';
 
 import { HOC, Loading } from '../../Components';
 import Sidebar from '../Sider';
+import PageHeader from '../../Components/CommonComponents/ContentHeader';
+
+
+
+// import P
 
 import { connect } from 'react-redux';
 
@@ -37,11 +42,18 @@ class DashboardLayout extends Component {
                 {loading ? 
                   <Loading /> 
                 :
-                <Router>
-                  {/* <Switch> */}
-                      <HOC component={content}/>
-                  {/* </Switch> */}
-                </Router>
+                  <>
+                    <Breadcrumb style={{ margin: '16px 0' }}>
+                      <Breadcrumb.Item>
+                        <PageHeader component={content}/>
+                      </Breadcrumb.Item>
+                    </Breadcrumb>
+                    <Breadcrumb>
+                      <Breadcrumb.Item>
+                        <HOC component={content}/>
+                      </Breadcrumb.Item>
+                    </Breadcrumb>
+                  </>
               }
                 </div>
               </Content>

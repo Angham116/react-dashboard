@@ -9,7 +9,6 @@ import 'antd/dist/antd.css';
 class App extends Component {
 
   render(){
-    const { content, loading } = this.props;
     return (
       <DashboardLayout />
     );
