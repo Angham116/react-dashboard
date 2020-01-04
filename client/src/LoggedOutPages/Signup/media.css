@@ -1,0 +1,97 @@
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){
+
+  .signup__container {
+    position: absolute !important;
+    background-image: var(--signup-bg-img);
+    background-repeat: no-repeat;
+    background-position: 4vh 9vw !important;
+    background-size: 50%;
+    top: 0% !important;
+    height: 1366px;
+  }
+  
+  .signup__container-form {
+    left: 47% !important;
+    top: 0% !important;
+  }
+  
+  .signup-form {
+    width: 100% !important;
+    height: 130% !important;
+  }
+  
+  .signup__container-form .visible-err-box {
+    width: 418px !important;
+    top: 27% !important;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .signup__container {
+      position: absolute !important;
+      background-image: none;
+      top: 0% !important;
+      height: 1023px;
+    }
+  
+    .signup-form {
+      width: 100% !important;
+      height: 130% !important;
+    }
+  
+    .signup__container-form {
+      left: 121px;
+    }
+  
+    .first-name-input,
+    .last-name-input, 
+    .password-input, 
+    .confirm-password-input {
+      width: 47% !important;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .signup__container {
+      position: fixed !important;
+      background: none !important;
+      width: 90% !important;
+      top: 6% !important;
+    };
+  
+    .signup-header h1 {
+      font-size: 1.4em !important;
+    }
+  
+    .signup-form {
+      position: absolute !important;
+      width: 170% !important;
+      height: 115% !important;
+      right: 0 !important;
+      left: -50%;
+      padding: 2rem 1rem 0rem 1rem !important;
+    }
+  
+    .first-name-input,
+    .last-name-input, 
+    .password-input, 
+    .confirm-password-input {
+      width: 100% !important;
+      margin-bottom: 1rem !important
+    }
+  
+    .first-name-input, 
+    .password-input {
+      width: 100% !important;
+      margin-bottom: 1rem !important;
+    }
+  
+    .last-name-input,
+    .confirm-password-input {
+      margin-bottom: 0 !important;
+    }
+    
+  }
+
