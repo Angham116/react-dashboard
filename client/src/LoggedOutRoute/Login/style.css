@@ -1,0 +1,80 @@
+.login__container {
+  position: absolute !important;
+  background: var(--body-bg-color);
+  background-image: url('../../Assets/login-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 12vh 9vw;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 623px;
+  padding: 20px !important;
+}
+
+.login__container-form {
+  position: absolute !important;
+  top: 3% !important;
+  left: 49%;
+  text-align: center !important;
+  padding: 0rem 1rem !important;
+  height: 450px !important;
+}
+
+.login-header {
+  width: 130%;
+  text-align: center !important;
+  padding-left: 146px !important;
+}
+
+.login-header {
+  margin-bottom: 2rem !important;
+}
+
+.login-header h2,
+.forget-password-hint {
+  color: var(--main-color);
+}
+
+.login-form {
+  position: absolute;
+  background-color: var(--white-color) !important;
+  padding: 5rem 3rem !important;
+  border: 1px solid var(--form-border-color) !important;
+  width: 591px !important;
+  border-radius: 3px !important;
+  height: 95% !important;
+}
+
+.login-email-input {
+  margin-top: 20px !important;
+}
+
+.login-password-input, 
+.login-email-input,
+.visible-err-box {
+  height: 40px !important;
+  width: 360px !important;
+}
+
+.login-form-item .ant-checkbox-checked .ant-checkbox-inner,
+  .login-form-item.ant-checkbox-wrapper:hover,
+  .ant-checkbox:hover,
+  .ant-checkbox-input:focus {
+  background: var(--main-color) !important;
+  border-color: var(--btn-border-color) !important;
+}
+
+.login-form-item {
+  margin-bottom: 1rem !important;
+}
+
+
+.remember-item {
+  text-align: left !important;
+  padding-left: 66px !important;
+}
+
+.password-item {
+  margin-bottom: 0 !important
+}
