@@ -11,3 +11,99 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --main-color: #FF857A;
+  --btn-border-color: #FF857A;
+  --btn-hover-color: #ffaea6;
+  --white-color: #fff;
+  --form-border-color: #D0D7DD;;
+  --title-hint-color: #707070;
+  --err-color: #FF6D4A;
+  --err-bg-color: #FFF0ED;
+  --body-bg-color: #F9F9F9;
+  --sidebar-item-border:#FFCA83;
+  --link-color: #2062CB;
+  --footer-bg-color: #F5F5F5;
+  --footer-color: #B5C2C3;
+}
+
+.login-form-button,
+.signup-form-button,
+.forgetPassword-button,
+.checkEmail-button {
+  background: var(--main-color) !important;
+  border-color: var(--btn-border-color) !important;
+  width: 200px !important;
+  height: 40px !important;
+  margin: 0 auto !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+.login-form-button:hover,
+.signup-form-button:hover,
+.forgetPassword-button:hover,
+.checkEmail-button:hover  {
+  background: var(--btn-hover-color) !important
+}
+
+.login-link:hover,
+.signup-link:hover,
+.forget-password-hint:hover,
+.accept-terms-text:hover {
+  text-decoration: underline;
+}
+
+.title-hint {
+  color: var(--title-hint-color);
+}
+
+.hidden-err-box {
+  display: none !important;
+}
+
+.visible-err-box {
+  display: block !important;
+  position: absolute;
+  top: 47px;
+  text-align: center;
+  left: 113px;
+}
+
+.login-form .err-msg {
+  display: block;
+  color: var(--err-color) !important;
+  padding: 10px 0px !important;
+  text-align: center !important;
+  background: var(--err-bg-color);
+  border-radius: 4px;
+}
+
+.signup__container-form .err-msg {
+  text-align: left !important;
+  display: block;
+  color: var(--err-color) !important;
+  font-family: 'Roboto', sans-serif;
+  text-align: left !important;
+  background: var(--err-bg-color);
+  border-radius: 4px;
+  padding: 15px 18px !important;
+  top: 20% !important
+}
+
+.signup__container-form .visible-err-box {
+  width: 400px !important;
+  height: 40px !important;
+  display: block !important;
+  position: absolute;
+  top: 25%;
+  text-align: left !important;
+  left: 52px;
+}
+
+.logo-img {
+  padding: 0 !important;
+}
+
+

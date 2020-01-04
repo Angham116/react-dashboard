@@ -1,0 +1,121 @@
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){
+
+  .login__container {
+    position: absolute !important;
+    background-position: 8vh 11vw !important;
+    top: 0% !important;
+    width: 1480px;
+    height: 1972px;
+  }
+  
+  .login__container-form {
+    left: 50% !important;
+    top: 5% !important;
+  }
+  
+  .login-form {
+    width: 170% !important;
+    height: 80% !important;
+    padding: 4rem 3rem !important;
+  }
+  
+  .remember-item {
+    padding-left: 30px !important;
+  }
+  
+  .login-email-input,
+  .login-password-input {
+    width: 80% !important;
+  }
+  
+  .login-header {
+    width: 100% !important;
+    text-align: center !important
+  }
+  
+  .footer {
+    bottom: 0 !important
+  }
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .login__container {
+      background-size: 55% !important;
+      top: 0% !important;
+      background-position: 7vh 23vw !important;
+      width: 141% !important;
+      height: 1442px;
+    }
+  
+    .login__container-form {
+      left: 50% !important;
+    }
+  
+    .login-form {
+      width: 130% !important;
+      height: 90% !important;
+      left: -5%;
+    }
+  
+    .login-header {
+      padding-right: 35px !important;
+      width: 100% !important;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) and (max-width: 700px) {
+    .login__container {
+      position: fixed !important;
+      background: none !important;
+      width: 80% !important;
+      height: 100%;
+      padding: 0px !important;
+      top: 10% !important;
+    };
+  
+    .login-form {
+      position: absolute !important;
+      left: 0 !important;
+    }
+  
+    .login__container-form {
+      padding: 1rem !important;
+      left: 1% !important;
+      right: 1% !important;
+    }
+  
+    .login-header {
+      width: 130%;
+      text-align: center !important;
+      margin-left: -58px !important;
+    }
+  
+    .login-form {
+      height: 90% !important;
+      padding: 4rem 0rem !important;
+    }
+  
+    .login-email-input,
+    .login-password-input {
+      width: 80% !important;
+    }
+  
+    .login-form-button {
+      font-size: 12px !important;
+      width: 80% !important;
+      height: 40px !important;
+      margin: 1rem 0 !important;
+    }
+  
+    .remember-item {
+      margin-bottom: 0 !important;
+    }
+  
+    .forget-password-hint {
+      display: block !important;
+    }
+  
+  }
+
+  
