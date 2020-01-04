@@ -10,3 +10,4 @@ export const Help_Center_Url = '/help-center';
 export const Groups_Url = '/groups';
 export const Forget_Pass_Url = '/forget-pass';
 export const SignUp_Url = '/signup';
+export const Support_Url = '/support';
