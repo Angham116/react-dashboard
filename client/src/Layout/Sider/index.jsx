@@ -15,61 +15,38 @@ import {
   Help_Center_Url
 } from '../../routes_url';
 
-import { connect } from 'react-redux';
-
-import changeContentAction from '../../store/actions/changeContent';
-
 import './style.css';
 class Sider extends Component {
-
-  handleChangeContent = content => {
-    const { changeContentAction : changeContent } = this.props;
-    changeContent(content);
-  };
 
   render() {
     return (
       <>
         <Menu className="sidebar__container">
-          <Menu.Item
-            onClick={() => this.handleChangeContent('Dashboard')}>
+          <Menu.Item>
               <Link to={Dashboard_Url}>Dashboard</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('ToDos')}>
+          <Menu.Item>
               <Link to={ToDos_Url}>ToDos</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('Objectives')}>
-              <Link to={Objectives_Url}>Objectives</Link>
+          <Menu.Item>
+            <Link to={Objectives_Url}>Objectives</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('Meetings')}>
+          <Menu.Item>
               <Link to={Meetings_Url}>Meetings</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('Notifications')}
-          >
+          <Menu.Item>
             <Link to={Notifications_Url}>Notifications</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('People')}
-          >
+          <Menu.Item>
             <Link to={People_Url}>People</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('Groups')}
-          >
+          <Menu.Item>
             <Link to={Groups_Url}>Groups</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('HelpCenter')}
-          >
+          <Menu.Item>
             <Link to={Help_Center_Url}>Help Center</Link>
           </Menu.Item>
-          <Menu.Item
-            onClick={() => this.handleChangeContent('Settings')}
-          >
+          <Menu.Item>
             <Link to={Settings_Url}>Settings</Link>
           </Menu.Item>
         </Menu>
@@ -77,5 +54,4 @@ class Sider extends Component {
     )
   }
 }
-
-export default connect(null, { changeContentAction })(Sider);
+export default Sider;
