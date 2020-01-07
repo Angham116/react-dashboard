@@ -3,7 +3,6 @@ import Settings from './Settings';
 import Notifications from './Notifications';
 import Loading from './Loading';
 import ToDos from './ToDos';
-import HOC from './HOC';
 import Meetings from './Meetings';
 import Objectives from './Objectives';
 import People from './People';
@@ -16,7 +15,6 @@ export {
   Notifications,
   Loading,
   ToDos,
-  HOC,
   Objectives,
   Meetings,
   People,
