@@ -15,7 +15,7 @@ import {
   Meetings_Url,
   Groups_Url,
   Help_Center_Url,
-  ToDos_Url,
+  Add_New_Product,
 } from './routes_url';
 
 import {
@@ -30,6 +30,7 @@ import 'antd/dist/antd.css';
 
 import {
   Dashboard,
+  AddNewProduct,
   People,
   Notifications,
   Settings,
@@ -37,7 +38,6 @@ import {
   Meetings,
   Groups,
   HelpCenter,
-  ToDos
 } from './Components';
 
 class App extends Component {
@@ -51,8 +51,8 @@ class App extends Component {
           <LoggedOutPages exact path={SignUp_Url} component={Signup} />
           <PrivatePages exact path={'/'} component={Dashboard} />
           <PrivatePages exact path={Dashboard_Url} component={Dashboard} />
+          <PrivatePages exact path={Add_New_Product} component={AddNewProduct} />
           <PrivatePages exact path={People_Url} component={People} />
-          <PrivatePages exact path={ToDos_Url} component={ToDos} />
           <PrivatePages exact path={Notifications_Url} component={Notifications} />
           <PrivatePages exact path={Settings_Url} component={Settings}/>
           <PrivatePages exact path={Objectives_Url} component={Objectives}/>

@@ -2,7 +2,7 @@ import Dashboard from './Dashboard';
 import Settings from './Settings';
 import Notifications from './Notifications';
 import Loading from './Loading';
-import ToDos from './ToDos';
+import AddNewProduct from './NewProduct';
 import Meetings from './Meetings';
 import Objectives from './Objectives';
 import People from './People';
@@ -14,7 +14,7 @@ export {
   Settings,
   Notifications,
   Loading,
-  ToDos,
+  AddNewProduct,
   Objectives,
   Meetings,
   People,
